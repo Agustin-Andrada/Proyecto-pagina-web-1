@@ -1,0 +1,301 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------------- HEADER Y NAVEGACIÓN ----------------------------*/
+
+header{
+    position: relative;
+    background:#1c1c1c;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.logo-header{
+
+    position:absolute;
+
+    right:25px;          
+    top: 50%;
+    transform:translateY(-50%);
+
+    width:180px;          
+    height:180px;
+
+    opacity:0.4;        
+
+    transition:.3s;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+/*---------------------------- MAIN Y FOOTER ----------------------------*/
+
+main {
+  flex: 1;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/*---------------------------- HERO ----------------------------*/
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Oscurece la imagen para mejorar la lectura del texto */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contenido-hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.contenido-hero h2 {
+  font-size: 2.5rem;
+}
+
+.contenido-hero p {
+  font-size: 1.2rem;
+}
+
+/*---------------------------- BOTÓN ----------------------------*/
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #005ecc;
+}
+
+/*---------------------------- CARDS ----------------------------*/
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+  background:#1c1c1c; 
+  
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:220px;
+    background:#252525;   
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.25);
+}
+
+.card h3, p{
+  margin-top: 0;
+  color: white;
+}
+
+.card h3, p{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+
+/*---------------------------- ¿POR QUÉ ELEGIRNOS? ----------------------------*/
+
+.porque-elegirnos{
+    padding:50px 20px;
+    background:#1c1c1c;    
+    text-align:center;
+    border-top:4px solid rgba(83, 83, 83, 0.993);
+}
+
+.porque-elegirnos h2{
+    font-size:2rem;
+    margin-bottom:30px;
+    color: white;
+}
+
+.contenedor-elegir{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.elegir-card{
+    width:220px;
+    background:#252525;   
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.25);
+    border-top:4px solid #0077ff;
+}
+
+
+
+.elegir-card:hover{
+    transform:translateY(-5px);
+}
+
+.elegir-card h3{
+    margin-bottom:10px;
+    color: white;
+}
+
+.elegir-card p{
+    font-size:.95rem;
+    color: white;
+}
+
+
+/*---------------------------- CARRUSEL ----------------------------*/
+
+.galeria{
+    background:#1c1c1c; 
+    overflow:hidden;
+    padding:30px 0;
+}
+
+.galeria h2{
+    color:white;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.carousel{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+
+.carousel-track{
+    display:flex;
+    transition:transform .8s ease;
+}
+
+.carousel-track img{
+    width:100%;
+    flex-shrink:0;
+    height:750px;
+    object-fit:cover;
+}
+
+/*---------------------------- UBICACIÓN ----------------------------*/
+
+.ubicacion{
+    background:#1c1c1c; 
+    padding:50px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.ubicacion h2{
+    margin-bottom:30px;
+    color: white;
+}
+
+.mapa-ubicacion{
+    border:none;
+    border-radius:13px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+
+
+/*---------------------------- FOOTER ----------------------------*/
+
+footer p{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+
+.logo-footer{
+    width:40px;
+    height:auto;
+    opacity:0.8;
+}
+
+
+/*---------------------------- RESPONSIVE ----------------------------*/
+
+@media (max-width: 768px) {
+  .contenido-hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .contenido-hero p {
+    font-size: 1rem;
+  }
+
+  .image-container img {
+    width: 90%;
+  }
+
+  .card {
+    width: 90%;
+  }
+}

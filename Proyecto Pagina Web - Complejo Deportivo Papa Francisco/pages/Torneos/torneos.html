@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proximos Torneos</title>
+    <link rel="stylesheet" href="torneos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="torneos-page">
+    <header>
+      <a href="../../index.html">
+        <img
+          src="../../img/logo-complejo-deportivo.png"
+          class="logo-header"
+          alt="Logo"
+        />
+      </a>
+
+      <h1>Complejo Deportivo Papa Francisco</h1>
+
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+          <li><a href="torneos.html">Torneos</a></li>
+          <li><a href="../Contacto/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-torneos">
+        <p>PROXIMOS TORNEOS</p>
+
+        <div class="table-torneos">
+          <!--Tabla de torneos-->
+          <table>
+            <tr>
+              <th>Torneo</th>
+              <th>Cupos</th>
+              <th>Categoria</th>
+              <th>Premio</th>
+              <th>Fecha</th>
+            </tr>
+            <tr>
+              <td>Futbol 11 - Verano</td>
+              <td>8</td>
+              <td>Libre</td>
+              <td>$250.000</td>
+              <td>A confirmar</td>
+            </tr>
+            <tr>
+              <td>Futbol 6 - Verano</td>
+              <td>10</td>
+              <td>Sub 21</td>
+              <td>$150.000</td>
+              <td>A confirmar</td>
+            </tr>
+            <tr>
+              <td>Futbol 11 - Invierno</td>
+              <td>15</td>
+              <td>Libre</td>
+              <td>$300.000</td>
+              <td>A confirmar</td>
+            </tr>
+            <tr>
+              <td>Futbol 6 - Invierno</td>
+              <td>20</td>
+              <td>Senior</td>
+              <td>$200.000</td>
+              <td>A confirmar</td>
+            </tr>
+          </table>
+        </div>
+
+        <section id="formulario">
+          <h2>Inscripción</h2>
+
+          <form id="inscripcion">
+            <input type="text" id="nombre" placeholder="Nombre" />
+
+            <input type="text" id="apellido" placeholder="Apellido" />
+
+            <input type="number" id="edad" placeholder="Edad" />
+
+            <input type="email" id="email" placeholder="Email" />
+
+            <input type="tel" id="telefono" placeholder="Teléfono" />
+
+            <input
+              type="text"
+              id="nombre-equipo"
+              placeholder="Nombre del equipo"
+            />
+
+            <select id="torneo"></select>
+
+            <button type="submit">Enviar inscripción</button>
+          </form>
+        </section>
+      </section>
+    </main>
+    <footer><p>© 2026 Complejo Deportivo</p></footer>
+
+    <script src="torneos.js"></script>
+  </body>
+</html>

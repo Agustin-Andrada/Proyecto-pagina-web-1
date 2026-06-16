@@ -1,0 +1,199 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------------- HEADER Y NAVEGACIÓN ----------------------------*/
+
+header{
+    position: relative;
+    background:#1c1c1c;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.logo-header{
+
+    position:absolute;
+
+    right:25px;          
+    top:50%;             
+    transform:translateY(-50%);
+
+    width:180px;          
+    height:180px;
+
+    opacity:0.4;         
+
+    transition:.3s;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+/*---------------------------- MAIN Y FOOTER ----------------------------*/
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/*---------------------------- FONDO ----------------------------*/
+
+.contacto-page {
+  background: url("../../img/pexels-photo-274506.jpeg") center/cover no-repeat;
+  position: relative;
+}
+
+.contacto-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: -1;
+}
+
+/*---------------------------- CAJA DE CONTACTO ----------------------------*/
+
+.contacto-box {
+  width: 420px;
+  max-width: 95%;
+
+  background: rgba(12,12,12,.6);
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.contacto-box h2,
+.contacto-box p,
+.contacto-box label {
+  color: white;
+}
+
+/*---------------------------- FORMULARIO ----------------------------*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/*---------------------------- INPUTS ----------------------------*/
+
+.contacto-box input,
+.contacto-box textarea {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+.contacto-box input {
+
+  height: 45px;
+
+}
+
+.contacto-box textarea {
+
+  height: 180px;
+
+  resize: none;
+
+}
+
+.contacto-box input:focus,
+.contacto-box textarea:focus {
+
+  border-color: #0077ff;
+
+}
+
+/*---------------------------- BOTÓN ----------------------------*/
+
+.contacto-box button {
+
+  width: 100%;
+
+  background: #0077ff;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  padding: 12px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+.contacto-box button:hover {
+
+  background: #005ecc;
+
+}
+
+/*---------------------------- RESPONSIVE ----------------------------*/
+
+@media (max-width:768px){
+
+  .contacto-box{
+
+    width:95%;
+
+    padding:20px;
+
+  }
+
+}

@@ -1,0 +1,206 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Montserrat;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/*---------------------------- HEADER Y NAVEGACIÓN ----------------------------*/
+
+header{
+    position: relative;
+    background:#1c1c1c;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.logo-header{
+
+    position:absolute;
+
+    right:25px;          
+    top:50%;             
+    transform:translateY(-50%);
+
+    width:180px;          
+    height:180px;
+
+    opacity:0.4;        
+
+    transition:.3s;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+/*---------------------------- MAIN Y FOOTER ----------------------------*/
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/*---------------------------- FONDO ----------------------------*/
+
+.nosotros-page {
+  background: url("../../img/pexels-photo-209977.jpeg") center/cover no-repeat;
+  position: relative;
+}
+
+.nosotros-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/*---------------------------- CONTENIDO ----------------------------*/
+
+.section-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-nosotros h2,
+.section-nosotros p {
+  color: white;
+}
+
+/*---------------------------- OFERTA DEPORTIVA ----------------------------*/
+
+.oferta {
+  width: 100%;
+}
+
+.grid-deportes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/*---------------------------- TARJETAS ----------------------------*/
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 1;
+  transition: .3s;
+}
+
+.item:hover::before {
+  background: rgba(0,0,0,.65);
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+/*---------------------------- TITULO ----------------------------*/
+
+.titulo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 2;
+  transition: .3s;
+}
+
+.item:hover .titulo {
+  opacity: 0;
+}
+
+/*---------------------------- TEXTO HOVER ----------------------------*/
+
+.texto-grilla {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  opacity: 0;
+  transition: .3s;
+}
+
+.item:hover .texto-grilla {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.texto-grilla h3 {
+  margin: 0;
+}
+
+.texto-grilla span {
+  font-size: .95rem;
+}
+
+/*---------------------------- RESPONSIVE ----------------------------*/
+
+@media (max-width:768px){
+
+  .grid-deportes{
+    grid-template-columns:1fr;
+  }
+
+  .item img{
+    height:350px;
+  }
+
+}
