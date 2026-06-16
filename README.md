@@ -11,7 +11,7 @@ El sitio permite mostrar información sobre:
 -Un formulario de contacto para consultas o inscripción.
 
 👥 Integrantes del grupo
-Agustín Andrada — Desarrollo del sitio (HTML y CSS)
+Agustín Andrada — Desarrollo del sitio (HTML, CSS y JAVASCRIPT)
 
 ▶️ Instrucciones para visualizar el proyecto
 
